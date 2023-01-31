@@ -1,0 +1,15 @@
+@use 'sass:math';
+@import '../../../node_modules/modern-normalize/modern-normalize.css';
+@import './utils/mixins';
+
+@import './presets/fonts';
+@import './presets/vars';
+@import './presets/def-presets';
+
+@import './utils/def-slider';
+@import './presets/container';
+@import './utils/utils-collection';
+@import './utils/text-utils';
+
+@import './sections/header';
+@import './sections/footer';
