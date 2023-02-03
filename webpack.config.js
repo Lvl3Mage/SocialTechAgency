@@ -27,6 +27,7 @@ module.exports = {
     mode: mode,
     entry: './src/index.js',
     output: {
+        hashFunction: "xxhash64",
         //path: PATHS.dist,
         //filename: `${PATHS.js}[name].[contenthash].js`,
         filename: `${PATHS.js}[name].js`,

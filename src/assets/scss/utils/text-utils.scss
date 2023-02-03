@@ -69,6 +69,25 @@
 	&--title-font{
 		font-family: $titleFont;
 	}
+	&--italic{
+		font-style: italic;
+	}
+	&--green{
+		color: $green;
+		--color: #{$green};
+	}
+	&--yellow{
+		color: $yellow;
+		--color: #{$yellow};
+	}
+	&--white{
+		color: #FFF;
+		--color: #FFF;
+	}
+	&--gray{
+		color: #545454;
+		--color:#545454;
+	}
 }
 
 

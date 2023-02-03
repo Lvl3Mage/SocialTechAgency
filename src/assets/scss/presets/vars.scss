@@ -2,8 +2,8 @@
   ========================================================================== */
 
 // Fonts
-$textFont                : Helvetica, sans-serif;
-$titleFont               : Russo One, sans-serif;
+$textFont                : Montserrat, sans-serif;
+$titleFont               : Oswald, sans-serif;
 
 
 // Screen sizes
@@ -20,7 +20,7 @@ $smPhoneWidth            : 375px;
 $fontSizeXXL_desktop     : 64px;
 $fontSizeXXL_mobile      : 54px;
 
-$fontSizeXL_desktop      : 52px;
+$fontSizeXL_desktop      : 48px;
 $fontSizeXL_mobile       : 32px;
 
 $fontSizeL_desktop       : 36px;
@@ -39,7 +39,8 @@ $fontSizeXS_mobile       : 12px;
 // Main color
 $backgroundColor         : #FFF;
 $highlightColor          : #F33;
-
+$yellow                  : #F0AD00;
+$green                   : #008138;
 // Screen sizes
 $defFont                 : $textFont;
 $defFontColor            : #000;
