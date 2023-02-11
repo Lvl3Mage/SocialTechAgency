@@ -53,6 +53,12 @@
 			font-size: $fontSizeXS_desktop;
 		}
 	}
+	&-full{
+		&--XL-XS{
+			@include fSize($desktopWidth, $phoneWidth, $fontSizeXL_desktop, $fontSizeXS_mobile);
+		}	
+	}
+	
 
 	&--uppercase{
 		text-transform: uppercase;

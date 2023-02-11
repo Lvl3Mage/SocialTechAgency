@@ -26,8 +26,8 @@
 .btn{
 	display: inline-block;
 	padding: 15px 30px;
-	background-color: $green;
-	border-radius: 5px;
+	
+	
 	transition: all 0.2s;
 	cursor: pointer;//add inactive ltr
 	&:active{
@@ -35,8 +35,31 @@
 		filter: brightness(0.8);
 
 	}
+	&--green{
+		background-color: $green;
+	}
+	&--yellow{
+		background-color: $yellow;
+	}
+	&--rounded{
+		border-radius: 5px;
+	}
 	&--SM{
 		padding: 10px 15px;
 	}
 	
+}
+.background{
+	&--light-green{
+		background-color: $light-green;
+	}
+}
+h2{
+	@include fSize($tabletWidth, $phoneWidth, $fontSizeXXL_desktop, $fontSizeXXL_mobile);
+	font-weight: 400;
+	display: inline;
+	text-transform: uppercase;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-bottom: 4px solid $mar;
 }
