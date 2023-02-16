@@ -56,6 +56,9 @@
 	&-full{
 		&--XL-XS{
 			@include fSize($desktopWidth, $phoneWidth, $fontSizeXL_desktop, $fontSizeXS_mobile);
+		}
+		&--M-XS{
+			@include fSize($desktopWidth, $phoneWidth, $fontSizeM_desktop, $fontSizeXS_mobile);
 		}	
 	}
 	

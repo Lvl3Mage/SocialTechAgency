@@ -7,7 +7,7 @@
 		top: 0;
 		left: 0;
 		z-index: -5;
-		background-color: $light-green;
+		// background-color: $light-green;
 	}
 	&__nav {
 		@include breakpoint-down($phoneWidth){
