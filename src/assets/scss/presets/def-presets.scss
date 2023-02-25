@@ -11,4 +11,9 @@ a{
 	color: inherit;
 	text-decoration: none;
 	cursor: pointer;
+	&.def-link{
+		color: #0000EE;
+		&:visited { color: #551A8B; }
+		text-decoration: underline;
+	}
 }
