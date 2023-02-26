@@ -106,6 +106,7 @@
 		border-top: 0;
 	}
 }
+h1,
 h2{
 	@include fSize($desktopWidth, $phoneWidth, $fontSizeXXL_desktop, $fontSizeXL_mobile);
 	font-weight: 400;

@@ -82,19 +82,19 @@
 		font-style: italic;
 	}
 	&--green{
-		color: $green;
+		color: $green !important;
 		--color: #{$green};
 	}
 	&--yellow{
-		color: $yellow;
+		color: $yellow !important;
 		--color: #{$yellow};
 	}
 	&--white{
-		color: #FFF;
+		color: #FFF !important;
 		--color: #FFF;
 	}
 	&--gray{
-		color: #545454;
+		color: #545454 !important;
 		--color:#545454;
 	}
 }
