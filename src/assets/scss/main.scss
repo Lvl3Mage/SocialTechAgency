@@ -9,7 +9,7 @@
 
 //Libraries
 @import './libs/ibg'; // Also include in JS
-// @import './libs/modal'; // Also include in JS
+@import './libs/modal'; // Also include in JS
 @import './libs/slick-stylize';
 
 @import './utils/def-slider';
@@ -22,6 +22,7 @@
 
 @import './sections/header';
 @import './sections/footer';
+@import './sections/publication';
 
 .btn{
 	display: inline-block;
@@ -58,7 +59,6 @@
 	align-items: center;
 	border: 3px solid $yellow;
 	border-radius: 1.2em;
-	width: 100%;
 	padding: 3px;
 	input{
 		width: calc(80% - 15px);
