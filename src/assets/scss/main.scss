@@ -174,8 +174,10 @@ h2{
 		align-items: center;
 		top: 0;
 		left: 0;
+		filter: drop-shadow(0 0 5px #333);
 		transition: all 0.4s;
 		img{
+
 			width: 10%;
 			height: auto;
 		}
