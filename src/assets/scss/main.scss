@@ -183,3 +183,18 @@ h2{
 		}
 	}
 }
+.decor{
+	position: absolute;
+	left: var(--left);
+	top: var(--top);
+	width: var(--width);
+	&--S{
+		@include breakpoint-down($smTabletWidth){
+			display: none;
+		}
+	}
+	&__wrapper{
+		position: relative;
+
+	}
+}
