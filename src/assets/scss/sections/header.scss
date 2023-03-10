@@ -173,7 +173,7 @@
 	&__banner-text{
 		text-align: left;
 		position: absolute;
-		@include fSize($desktopWidth, $smPhoneWidth, 36, 8);
+		@include fSizePx($desktopWidth, $smPhoneWidth, 36, 8);
 
 		right: 60%;
 		left: 3%;

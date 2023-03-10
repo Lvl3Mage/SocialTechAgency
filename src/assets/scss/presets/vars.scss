@@ -17,36 +17,42 @@ $smPhoneWidth            : 375px;
 
 //Font sizes
 
-$fontSizeXXL_desktop     : 64px;
-$fontSizeXXL_mobile      : 54px;
+$fontSizeXXL_desktop     : 4rem;
+$fontSizeXXL_mobile      : 3.375rem;
 
-$fontSizeXL_desktop      : 48px;
-$fontSizeXL_mobile       : 32px;
+$fontSizeXL_desktop      : 3rem;
+$fontSizeXL_mobile       : 2rem;
 
-$fontSizeL_desktop       : 36px;
-$fontSizeL_mobile        : 26px;
+$fontSizeL_desktop       : 2.25rem;
+$fontSizeL_mobile        : 1.625rem;
 
-$fontSizeM_desktop       : 30px;
-$fontSizeM_mobile        : 22px;
+$fontSizeM_desktop       : 1.875rem;
+$fontSizeM_mobile        : 1.375rem;
 
-$fontSizeS_desktop       : 22px;
-$fontSizeS_mobile        : 18px;
+$fontSizeS_desktop       : 1.375rem;
+$fontSizeS_mobile        : 1.125rem;
 
-$fontSizeXS_desktop      : 16px;
-$fontSizeXS_mobile       : 12px;
+$fontSizeXS_desktop      : 1rem;
+$fontSizeXS_mobile       : 0.75rem;
 
 
 // Main color
-$backgroundColor         : #FFF;
-$highlightColor          : #86BC9C;
-$yellow                  : #F0AD00;
-$green                   : #008138;
-$light-green             : #86BC9C;
-$mar                     : #8BC5C6;
-
+$backgroundColor         : var(--backgroundColor); //#FFF
+$highlightColor          : var(--highlightColor); //#86BC9C;
+$yellow                  : var(--yellow); //#F0AD00;
+$green                   : var(--green); //#008138;
+$light-green             : var(--light-green); //#86BC9C;
+$mar                     : var(--mar); //#8BC5C6;
+$yellow-text             : var(--yellow-text, $yellow); //#F0AD00;
+$green-text              : var(--green-text, $green); //#008138;
+$light-green-text        : var(--light-green-text, $light-green); //#86BC9C;
+$mar-text                : var(--mar-text, $mar); //#8BC5C6;
+$white-text              : var(--white-text); //#FFF
+$black-text              : var(--black-text); //#000
+$gray-text               : var(--gray-text); //#545454
 // Def values
 $defFont                 : $textFont;
-$defFontColor            : #000;
+$defFontColor            : $black-text;
 $defFontSize             : 16px;
 $defFontWeight           : 400;
 $defLineHeight           : 1.4;

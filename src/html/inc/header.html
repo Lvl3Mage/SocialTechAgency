@@ -108,7 +108,7 @@
 					</div>
 				</div>
 				<div class="header__banner-bar-element md-fx-el--33 md-fx-od--2">
-					<div class="btn btn--green btn--rounded text--XS text--white text--600 text--center">Версия для слабовидящих</div>
+					<div class="btn btn--green btn--rounded text--XS text--white text--600 text--center" data-modal-trigger data-modal-id="visual-modal">Версия для слабовидящих</div>
 				</div>
 			</div>
 		</div>
@@ -206,3 +206,79 @@
 			</div>	
 		</div>
 	</header>
+	<div class="def-modal modal modal-bg" id="visual-modal">
+		<div class="def-modal__outer-container container">
+			<div class="def-modal__inner-container def-modal__inner-container--75">
+				<div class="def-modal__wrapper modal-window">
+					<div class="def-modal__top m--t-15">
+						<div class="def-modal__title text--400 text--L">
+							<span class="modal-title">Modal Title</span>
+						</div>
+						<div class="def-modal__cross modal-cross">
+							<div class="def-modal__cross-line def-modal__cross-line--1"></div>
+							<div class="def-modal__cross-line def-modal__cross-line--2"></div>
+						</div>
+					</div>
+					<div class="def-modal__content-wrapper def-modal-class-name modal-content-wrapper">
+						<div class="visual-options p--15">
+							<h2 class="underline--mar text--M">
+								Text Size
+							</h2>
+							<div class="fx fx-wr--w fx-jc--sa fx-ai--c m--y-25">
+								<div class="visual-options__font visual-options__font--S" data-font-option="16px">
+									<i class="fa-solid fa-font"></i>
+								</div>
+								<div class="visual-options__font visual-options__font--M" data-font-option="26px">
+									<i class="fa-solid fa-font"></i>
+								</div>
+								<div class="visual-options__font visual-options__font--L" data-font-option="32px">
+									<i class="fa-solid fa-font"></i>
+								</div>	
+							</div>
+							<h2 class="underline--mar text--M">
+								Text Color
+							</h2>
+							<div class="fx fx-wr--w fx-jc--sa fx-ai--c m--y-25">
+								<div class="visual-options__color visual-options__color--default" data-color-picker data-color-class="HTML-color--default">
+									<i class="fa-solid fa-font"></i>
+								</div>
+								<div class="visual-options__color visual-options__color--dark" data-color-picker data-color-class="HTML-color--dark">
+									<i class="fa-solid fa-font"></i>
+								</div>
+								<div class="visual-options__color visual-options__color--blue" data-color-picker data-color-class="HTML-color--blue">
+									<i class="fa-solid fa-font"></i>
+								</div>
+								<div class="visual-options__color visual-options__color--yellow" data-color-picker data-color-class="HTML-color--yellow">
+									<i class="fa-solid fa-font"></i>
+								</div>
+								<div class="visual-options__color visual-options__color--green" data-color-picker data-color-class="HTML-color--green">
+									<i class="fa-solid fa-font"></i>
+								</div>
+							</div>
+
+							<h2 class="text--S">
+								Example text
+							</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorem est aspernatur hic, cum placeat saepe consectetur ad eos at esse eligendi recusandae ducimus id quod deleniti rem vel tempora.
+							</p>
+
+							<div class="fx fx-wr--w fx-jc--sa fx-ai--c m--y-25">
+								<div class="visual-options__image visual-options__image--visible" data-image-picker data-image-class="HTML-images--visible">
+									<i class="fa-solid fa-image"></i>
+								</div>
+								<div class="visual-options__image visual-options__image--grayscale" data-image-picker data-image-class="HTML-images--grayscale">
+									<i class="fa-solid fa-image"></i>
+								</div>
+								<div class="visual-options__image visual-options__image--contrast" data-image-picker data-image-class="HTML-images--contrast">
+									<i class="fa-solid fa-image"></i>
+								</div>
+							</div>
+
+							
+						</div>
+					</div>
+				</div>
+			</div>  
+		</div>
+	</div>
