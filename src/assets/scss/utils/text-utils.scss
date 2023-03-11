@@ -18,47 +18,47 @@
 		font-weight: 700;
 	}
 	&--XXL{
-		@include fSize($tabletWidth, $phoneWidth, $fontSizeXXL_desktop, $fontSizeXXL_mobile);
+		@include fSizeRem($tabletWidth, $phoneWidth, $fontSizeXXL_desktop, $fontSizeXXL_mobile);
 		&--static{
 			font-size: $fontSizeXXL_desktop;
 		}
 	}
 	&--XL{
-		@include fSize($tabletWidth, $phoneWidth, $fontSizeXL_desktop, $fontSizeXL_mobile);
+		@include fSizeRem($tabletWidth, $phoneWidth, $fontSizeXL_desktop, $fontSizeXL_mobile);
 		&--static{
 			font-size: $fontSizeXL_desktop;
 		}
 	}
 	&--L{
-		@include fSize($tabletWidth, $phoneWidth, $fontSizeL_desktop, $fontSizeL_mobile);
+		@include fSizeRem($tabletWidth, $phoneWidth, $fontSizeL_desktop, $fontSizeL_mobile);
 		&--static{
 			font-size: $fontSizeL_desktop;
 		}
 	}
 	&--M{
-		@include fSize($tabletWidth, $phoneWidth, $fontSizeM_desktop, $fontSizeM_mobile);
+		@include fSizeRem($tabletWidth, $phoneWidth, $fontSizeM_desktop, $fontSizeM_mobile);
 		&--static{
 			font-size: $fontSizeM_desktop;
 		}
 	}
 	&--S{
-		@include fSize($tabletWidth, $phoneWidth, $fontSizeS_desktop, $fontSizeS_mobile);
+		@include fSizeRem($tabletWidth, $phoneWidth, $fontSizeS_desktop, $fontSizeS_mobile);
 		&--static{
 			font-size: $fontSizeS_desktop;
 		}
 	}
 	&--XS{
-		@include fSize($tabletWidth, $phoneWidth, $fontSizeXS_desktop, $fontSizeXS_mobile);
+		@include fSizeRem($tabletWidth, $phoneWidth, $fontSizeXS_desktop, $fontSizeXS_mobile);
 		&--static{
 			font-size: $fontSizeXS_desktop;
 		}
 	}
 	&-full{
 		&--XL-XS{
-			@include fSize($desktopWidth, $phoneWidth, $fontSizeXL_desktop, $fontSizeXS_mobile);
+			@include fSizeRem($desktopWidth, $phoneWidth, $fontSizeXL_desktop, $fontSizeXS_mobile);
 		}
 		&--M-XS{
-			@include fSize($desktopWidth, $phoneWidth, $fontSizeM_desktop, $fontSizeXS_mobile);
+			@include fSizeRem($desktopWidth, $phoneWidth, $fontSizeM_desktop, $fontSizeXS_mobile);
 		}	
 	}
 	
@@ -82,20 +82,20 @@
 		font-style: italic;
 	}
 	&--green{
-		color: $green !important;
+		color: $green-text !important;
 		--color: #{$green};
 	}
 	&--yellow{
-		color: $yellow !important;
+		color: $yellow-text !important;
 		--color: #{$yellow};
 	}
 	&--white{
-		color: #FFF !important;
-		--color: #FFF;
+		color: $white-text !important;
+		--color: $white-text;
 	}
 	&--gray{
-		color: #545454 !important;
-		--color:#545454;
+		color: $gray-text !important;
+		--color: $gray-text;
 	}
 }
 

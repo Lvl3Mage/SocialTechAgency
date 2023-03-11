@@ -1,10 +1,19 @@
-@mixin fSize($wmax, $wmin, $fmax, $fmin){
+@mixin fSizePx($wmax, $wmin, $fmax, $fmin){
   font-size: calc((100vw - #{strip-unit($wmin)}px)/(#{strip-unit($wmax)} - #{strip-unit($wmin)})*(#{strip-unit($fmax)} - #{strip-unit($fmin)}) + #{strip-unit($fmin)}px);
   @media screen and (min-width: #{strip-unit($wmax)}px) {
     font-size: #{strip-unit($fmax)}px;
   }
   @media screen and (max-width: #{strip-unit($wmin)}px) {
     font-size: #{strip-unit($fmin)}px;
+  }
+}
+@mixin fSizeRem($wmax, $wmin, $fmax, $fmin){
+  font-size: calc((100vw - #{strip-unit($wmin)}px)/(#{strip-unit($wmax)} - #{strip-unit($wmin)})*(#{strip-unit($fmax)} - #{strip-unit($fmin)}) + #{strip-unit($fmin)}rem);
+  @media screen and (min-width: #{strip-unit($wmax)}px) {
+    font-size: #{strip-unit($fmax)}rem;
+  }
+  @media screen and (max-width: #{strip-unit($wmin)}px) {
+    font-size: #{strip-unit($fmin)}rem;
   }
 }
 @function strip-unit($number) {
