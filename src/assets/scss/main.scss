@@ -60,7 +60,7 @@ p {
 .searchbar {
 	position: relative;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	border: 3px solid $yellow;
 	border-radius: 1.2em;
@@ -445,4 +445,15 @@ html{
 .partners_list {
 	overflow: auto;
 	height: 300px;
+}
+.searchbar__btn {
+	background-color: transparent;
+	border: none;
+	padding-top: 0;
+	padding-bottom: 0;
+	&>span{
+		width: 30px;
+		height: 30px;
+		font-size: 30px;
+	}
 }

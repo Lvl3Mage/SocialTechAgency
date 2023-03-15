@@ -23,7 +23,6 @@ $(document).on('mousedown touchstart', '.modal-bg, .modal-cross', function(event
 	var modal = $(this).closest(".modal");
 	let video = modal.find('iframe').first();
 	if (video.length) {
-		//console.log(video[0].contentWindow);
 		video[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
 	}
 	modal.removeClass("modal-active");
