@@ -13,6 +13,7 @@
 @import './libs/slick-stylize';
 
 @import './utils/def-slider';
+@import './utils/def-text';
 @import './presets/container';
 @import './utils/utils-collection';
 @import './utils/text-utils';
@@ -433,4 +434,15 @@ html{
 			filter: grayscale(1);
 		}
 	}
+}
+
+.partner_item {
+	cursor: pointer;
+}
+.partner_item:hover {
+	background-color: #ddd;
+}
+.partners_list {
+	overflow: auto;
+	height: 300px;
 }

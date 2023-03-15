@@ -21,6 +21,11 @@ $(document).on('click', '[data-modal-trigger]', function(event) {
 $(document).on('mousedown touchstart', '.modal-bg, .modal-cross', function(event) {
 	$("body").css("overflow", "visible");
 	var modal = $(this).closest(".modal");
+	let video = modal.find('iframe').first();
+	if (video.length) {
+		//console.log(video[0].contentWindow);
+		video[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+	}
 	modal.removeClass("modal-active");
 
 });

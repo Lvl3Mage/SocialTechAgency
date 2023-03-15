@@ -65,6 +65,17 @@ $(document).ready(function(){
 			}
 		]
 	});
+	$('.partner_image').prop('src', $('.partner_item').first().data('src'));
+	$('.partner_link').prop('href', $('.partner_item').first().data('link'));
+	$('.partner_link').text($('.partner_item').first().data('link'));
+
+});
+
+$('.partner_item').click(function (e) {
+	$('.partner_image').prop('src', $(this).data('src'));
+	$('.partner_link').prop('href', $(this).data('link'));
+	$('.partner_link').text($(this).data('link'));
+
 });
 
 $(document).on( "click", "[data-mob-menu-trigger]", function(){
