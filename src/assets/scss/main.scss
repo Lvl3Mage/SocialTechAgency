@@ -104,6 +104,11 @@ p {
 		}
 	}
 }
+.search-result{
+	border-bottom: 3px solid $yellow;
+	background: $mar;
+	border-radius: 15px;
+}
 .searchbar {
 	background: $white-text;
 	position: relative;
