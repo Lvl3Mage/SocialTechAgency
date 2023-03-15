@@ -57,7 +57,55 @@ p {
 		padding: 10px 15px;
 	}
 }
+
+.contact-form{
+	input:not([type="submit"]){
+		background: white;
+		width: 100%;
+		// margin-right: 3%;
+		border: none;
+		padding: 5px;
+		border-radius: 5px;
+		// height: 1.4em;
+		&:focus{
+			outline: 1px solid #0004;
+		}
+	}
+	input[type="submit"]{
+		border: none;
+	}
+	textarea{
+		background: white;
+		width: 100%;
+		// margin-right: 3%;
+		border: none;
+		padding: 5px;
+		border-radius: 5px;
+		resize: none;
+		// height: 1.4em;
+		&:focus{
+			outline: 1px solid #0004;
+		}
+	}
+}
+.searchbar-expandable{
+	.searchbar{
+		display: none;
+		position: absolute;
+		top: calc(100% + 15px);
+		// border-top: 15px solid transparent;
+		left: 15px;
+		right: 15px;
+	}
+	&:hover,&:focus{
+		.searchbar{
+			display: flex;
+			z-index: 10;
+		}
+	}
+}
 .searchbar {
+	background: $white-text;
 	position: relative;
 	display: flex;
 	justify-content: space-around;
@@ -92,6 +140,7 @@ p {
 		}
 	}
 }
+
 .background{
 	&--light-green{
 		background-color: $light-green;
@@ -329,6 +378,7 @@ html{
 
 	--white-text: #FFF;
 	--black-text: #000;
+	--gray-text: #545454;
 }
 .HTML-color{
 	&--default{
@@ -349,6 +399,7 @@ html{
 
 		--white-text: #FFF !important;
 		--black-text: #FFF !important;
+		--gray-text: #FFF !important;
 		.footer__bg{
 			background-image: none !important;
 			background: #222;
@@ -369,6 +420,7 @@ html{
 
 		--white-text: rgb(6 52 98) !important;
 		--black-text: rgb(6 52 98) !important;
+		--gray-text: rgb(6 52 98) !important;
 
 		.footer__bg{
 			background-image: none !important;
@@ -391,6 +443,7 @@ html{
 
 		--white-text: rgb(77 75 67) !important;
 		--black-text: rgb(77 75 67) !important;
+		--gray-text: rgb(77 75 67) !important;
 
 		.footer__bg{
 			background-image: none !important;
@@ -414,6 +467,7 @@ html{
 
 		--white-text: rgb(169 228 77) !important;
 		--black-text: rgb(169 228 77) !important;
+		--gray-text: rgb(169 228 77) !important;
 
 		.footer__bg{
 			background-image: none !important;
