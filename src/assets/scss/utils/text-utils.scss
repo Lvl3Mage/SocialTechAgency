@@ -83,19 +83,19 @@
 	}
 	&--green{
 		color: $green-text !important;
-		--color: #{$green};
+		--color: #{$green-text};
 	}
 	&--yellow{
 		color: $yellow-text !important;
-		--color: #{$yellow};
+		--color: #{$yellow-text};
 	}
 	&--white{
 		color: $white-text !important;
-		--color: $white-text;
+		--color: #{$white-text};
 	}
 	&--gray{
 		color: $gray-text !important;
-		--color: $gray-text;
+		--color: #{$gray-text};
 	}
 }
 
