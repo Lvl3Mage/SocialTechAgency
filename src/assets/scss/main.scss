@@ -88,26 +88,31 @@ p {
 		}
 	}
 }
-.searchbar-expandable{
+.searchbar-expandable{	
 	.searchbar{
-		display: none;
+		// display: none;
 		position: absolute;
-		top: calc(100% + 15px);
+		top:-50px;
 		// border-top: 15px solid transparent;
-		left: 15px;
-		right: 15px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 100%;
+		max-width: 500px;
+		transition: all 0.4s cubic-bezier(.4,1.72,.66,1);
 	}
-	&:hover,&:focus{
+	&:focus,&:focus-within{
 		.searchbar{
 			display: flex;
+			top: calc(100% + 15px);
 			z-index: 10;
 		}
 	}
 }
 .search-result{
-	border-bottom: 3px solid $yellow;
-	background: $mar;
-	border-radius: 15px;
+	border-bottom: 3px solid $mar;
+	//background: $mar;
+	// border-radius: 15px;
 }
 .searchbar {
 	background: $white-text;
@@ -515,4 +520,10 @@ html{
 		height: 30px;
 		font-size: 30px;
 	}
+}
+.page-numbers.current {
+	color: var(--mar);
+}
+.post-navigation {
+	color: var(--mar);
 }

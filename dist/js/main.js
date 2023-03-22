@@ -335,6 +335,15 @@ function GetCookieValueByRegEx(a, b) {
   return b ? b.pop() : '';
 } // $(':root').css('--themeColor', (color = ["red", "green", "lime", "purple", "blue"])[Math.floor(Math.random() * color.length)]);
 
+
+$('.searchbar__btn').click(function (e) {
+  let input = $(this).siblings('input').val();
+
+  if (!input) {
+    e.preventDefault();
+  }
+});
+
 /***/ }),
 
 /***/ "./src/assets/scss/main.scss":
